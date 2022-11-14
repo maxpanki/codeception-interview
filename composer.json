@@ -1,0 +1,15 @@
+{
+    "name": "primarybyte/codeception-interview",
+    "description": "QA test day",
+    "authors": [
+        {
+            "name": "AndriiMz",
+            "email": "moroz97andrze@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "codeception/codeception": "^5.0",
+        "codeception/module-phpbrowser": "*",
+        "codeception/module-asserts": "*"
+    }
+}
