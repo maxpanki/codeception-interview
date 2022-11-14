@@ -18,4 +18,4 @@ services:
     environment:
       TERM: "xterm-256color"
     tty: true
-    command: sh -c "composer install && php vendor/bin/codecept run --steps"
+    command: sh -c "composer install && php vendor/bin/codecept run -vvv"

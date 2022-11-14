@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "cypress": "^11.0.1"
+  },
+  "dependencies": {
+    "cypress-real-events": "^1.7.4",
+    "selenium-standalone": "^8.2.3"
+  }
+}

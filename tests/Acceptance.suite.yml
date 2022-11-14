@@ -7,6 +7,7 @@
 actor: AcceptanceTester
 modules:
     enabled:
-        - PhpBrowser:
-            url: https://pitchbox.com/
+        - WebDriver:
+            url: 'https://pitchbox.com/'
+            browser: chrome
 step_decorators: ~

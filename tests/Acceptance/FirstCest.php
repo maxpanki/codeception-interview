@@ -1,16 +1,26 @@
 <?php
 
 
-namespace Tests\Acceptance;
+namespace App\Tests\Acceptance;
 
-use Tests\Support\AcceptanceTester;
+use App\Tests\Support\AcceptanceTester;
+use App\Tests\Support\Step\HelpStep;
+use App\Tests\Support\Step\MainStep;
 
 class FirstCest
 {
     // tests
-    public function tryToTest(AcceptanceTester $I)
+    public function tryToTest(
+        AcceptanceTester $I,
+        MainStep $mainStep,
+        HelpStep $helpStep
+    )
     {
+        $I->amGoingTo('Test pitchbox');
         $I->amOnPage('/');
-        $I->see('Quick Overview');
+        $mainStep->hoverResourceTab();
+        $mainStep->proceedToHelpPage();
+        $helpStep->searchUsingTheQuery('MX');
+        $I->see('What is MX Right?');
     }
 }
